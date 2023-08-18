@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Feed = () => {
+const FeedModal = () => {
   return <div></div>;
 };
 
-export default Feed;
+export default FeedModal;

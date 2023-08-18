@@ -13,7 +13,7 @@ import ProtectedRoute from './Components/Helper/ProtectedRoute';
 
 const App = () => {
   return (
-    <div>
+    <>
       <BrowserRouter>
         <UserStorage>
           <Header />
@@ -32,7 +32,7 @@ const App = () => {
           <Footer />
         </UserStorage>
       </BrowserRouter>
-    </div>
+    </>
   );
 };
 
