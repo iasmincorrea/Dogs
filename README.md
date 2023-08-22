@@ -20,7 +20,7 @@ Aplicativo web com funcionalidades parecidas de redes sociais como o Instagram. 
 
 ## 💻 Projeto
 
-- [Visite o projeto online]()
+- [Visite o projeto online](https://iasmincorrea.github.io/Dogs/)
 
 <div align="center">
   <img style="width: 49%" src="https://i.imgur.com/LPHla3v.png">
