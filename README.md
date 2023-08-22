@@ -1,7 +1,7 @@
 <h1 align="center"> Dogs </h1>
 
 <p align="center">
-Aplicativo web com funcionalidades parecidas de redes sociais como o Instagram.<br/>
+Aplicativo web com funcionalidades parecidas de redes sociais como o Instagram. [em desenvolvimento]<br/>
 </p>
 
 <p align="center">
