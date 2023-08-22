@@ -18,7 +18,7 @@ const App = () => {
         <UserStorage>
           <Header />
           <Routes>
-            <Route path="/dogs" element={<Home />} />
+            <Route path="/Dogs" element={<Home />} />
             <Route path="login/*" element={<Login />} />
             <Route
               path="conta/*"
