@@ -5,11 +5,14 @@ import './App.css';
 
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
+import Photo from './Components/Photo/Photo';
+import ProtectedRoute from './Components/Helper/ProtectedRoute';
+
 import Home from './Pages/Home';
 import Login from './Pages/Login/Login';
-import { UserStorage } from './UserContext';
 import User from './Pages/User/User';
-import ProtectedRoute from './Components/Helper/ProtectedRoute';
+
+import { UserStorage } from './UserContext';
 
 const App = () => {
   return (
@@ -28,6 +31,7 @@ const App = () => {
                 </ProtectedRoute>
               }
             />
+            <Route path="foto/:id" element={<Photo />} />
           </Routes>
           <Footer />
         </UserStorage>
