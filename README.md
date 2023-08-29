@@ -17,6 +17,7 @@ Aplicativo web com funcionalidades parecidas de redes sociais como o Instagram. 
 - JavaScript
 - JSX
 - Vite
+- Victory para a aba de Estatísticas
 
 ## 💻 Projeto
 
