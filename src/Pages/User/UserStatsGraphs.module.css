@@ -1,0 +1,38 @@
+.graph {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+@media(min-width: 768px) {
+  .graph {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width: 767px) {
+  .graph {
+    grid-template-columns: 1fr;
+  }
+}
+
+.graphItem {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+  border-radius: .2rem;
+  display: grid;
+  align-items: center;
+}
+
+.total {
+  padding: 2rem;
+  font-size: 2rem;
+}
+@media(min-width: 768px) {
+  .total {
+    grid-column: 1/3;
+  }
+}
+
+@media(max-width: 767px) {
+  .total {
+    grid-column: 1;
+  }
+}

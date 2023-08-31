@@ -1,8 +1,18 @@
 .photoPost {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin-bottom: 2rem;
+}
+@media(min-width: 768px) {
+  .photoPost {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 767px) {
+  .photoPost {
+    grid-template-columns: 1fr;
+  }
 }
 
 .file {
