@@ -20,11 +20,11 @@ const Header = () => {
           <Dogs />
         </Link>
         {data ? (
-          <Link className={styles.login} to="/conta">
+          <Link className={styles.login} to="/Dogs/conta">
             {data.nome}
           </Link>
         ) : (
-          <Link className={styles.login} to="/login">
+          <Link className={styles.login} to="/Dogs/login">
             Login | Criar
           </Link>
         )}
