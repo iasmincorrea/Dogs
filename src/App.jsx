@@ -19,7 +19,7 @@ import NotFound from './Components/NotFound';
 const App = () => {
   return (
     <div className="app">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <UserStorage>
           <Header />
           <main className="appBody">
