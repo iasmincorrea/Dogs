@@ -1,7 +1,7 @@
 <h1 align="center"> Dogs </h1>
 
 <p align="center">
-Aplicativo web com funcionalidades parecidas de redes sociais como o Instagram. [em desenvolvimento]<br/>
+Aplicativo web com funcionalidades parecidas de redes sociais como o Instagram.<br/>
 </p>
 
 <p align="center">
@@ -14,10 +14,9 @@ Aplicativo web com funcionalidades parecidas de redes sociais como o Instagram. 
 ## 🚀 Tecnologias
 
 - React.js
-- JavaScript
-- JSX
+- JavaScript/JSX
 - Vite
-- Victory para a aba de Estatísticas
+- Victory para gráficos modulares e visualização de dados
 
 ## 💻 Projeto
 
