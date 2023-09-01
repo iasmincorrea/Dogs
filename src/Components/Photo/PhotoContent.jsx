@@ -24,7 +24,7 @@ const PhtooContent = ({ data, single }) => {
             ) : (
               <Link
                 className={styles.authorHref}
-                to={`/Dogs/perfil/${photo.author}`}
+                to={`/perfil/${photo.author}`}
               >
                 @{photo.author}
               </Link>
@@ -32,7 +32,7 @@ const PhtooContent = ({ data, single }) => {
             <span className={styles.views}>{photo.acessos}</span>
           </p>
           <h1 className="title">
-            <Link to={`/Dogs/foto/${photo.id}`}>{photo.title}</Link>
+            <Link to={`/foto/${photo.id}`}>{photo.title}</Link>
           </h1>
           <ul className={styles.attributes}>
             <li className={styles.attributesItem}>{photo.peso} kg</li>

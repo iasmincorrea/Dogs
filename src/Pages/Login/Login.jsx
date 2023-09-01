@@ -13,7 +13,7 @@ import NotFound from '../../Components/NotFound';
 const Login = () => {
   const { login } = React.useContext(UserContext);
 
-  if (login === true) return <Navigate to="/Dogs/conta" />;
+  if (login === true) return <Navigate to="/conta" />;
   return (
     <section className={styles.container}>
       <div className={styles.forms}>

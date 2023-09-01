@@ -43,7 +43,7 @@ const LoginForm = () => {
         <Error error={error && 'Dados incorretos.'} />
       </form>
 
-      <Link className={styles.forgot} to="/Dogs/login/perdeu">
+      <Link className={styles.forgot} to="/login/perdeu">
         Perdeu a Senha?
       </Link>
 
@@ -52,7 +52,7 @@ const LoginForm = () => {
         <p className={styles.registerText}>
           Ainda não possui conta? Cadastre-se no site
         </p>
-        <Link className={stylesBtn.button} to="/Dogs/login/criar">
+        <Link className={stylesBtn.button} to="/login/criar">
           Cadastro
         </Link>
       </div>

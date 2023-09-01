@@ -13,18 +13,18 @@ const Header = () => {
       <nav className={`${styles.nav} container`}>
         <Link
           className={styles.logo}
-          to="/Dogs"
+          to="/"
           aria-label="Home | Dogs"
           title="Ir para a Home"
         >
           <Dogs />
         </Link>
         {data ? (
-          <Link className={styles.login} to="/Dogs/conta">
+          <Link className={styles.login} to="/conta">
             {data.nome}
           </Link>
         ) : (
-          <Link className={styles.login} to="/Dogs/login">
+          <Link className={styles.login} to="/login">
             Login | Criar
           </Link>
         )}
