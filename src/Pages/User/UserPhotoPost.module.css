@@ -3,13 +3,13 @@
   gap: 2rem;
   margin-bottom: 2rem;
 }
-@media(min-width: 768px) {
+@media(min-width: 1026px) {
   .photoPost {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media(max-width: 767px) {
+@media(max-width: 1025px) {
   .photoPost {
     grid-template-columns: 1fr;
   }

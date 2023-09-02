@@ -5,13 +5,13 @@
   justify-items: center;
 }
 
-@media(min-width: 768px) {
+@media(min-width: 1026px) {
   .feed {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media(max-width: 767px) {
+@media(max-width: 1025px) {
   .feed {
     grid-template-columns: repeat(2, 1fr);
   }

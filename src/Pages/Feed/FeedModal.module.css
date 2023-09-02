@@ -9,13 +9,13 @@
   z-index: 1000;
 }
 
-@media(min-width: 768px) {
+@media(min-width: 1026px) {
   .modal {
     padding: 2rem calc(4rem + 15px) 2rem 4rem;
   }
 }
 
-@media(max-width: 767px) {
+@media(max-width: 1025px) {
   .modal {
     padding: 2rem calc(2rem + 15px) 2rem 2rem;
   }
