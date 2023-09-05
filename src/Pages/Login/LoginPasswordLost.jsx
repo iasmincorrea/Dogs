@@ -27,20 +27,29 @@ const LoginPasswordLost = () => {
 
   return (
     <section className="animeLeft">
-      <Head title="Perdeu a Senha" />
+      <Head
+        title="Esqueceu a Senha"
+        description="Recupere o acesso à sua conta na nossa comunidade de amantes de cachorros. Siga as instruções para redefinir sua senha e retorne às aventuras caninas em nossa rede social. Nunca perca os momentos especiais com nossos amigos de quatro patas."
+      />
 
-      <h1 className="title">Perdeu a Senha?</h1>
+      <h1 className="title">Esqueceu a Senha?</h1>
 
       {data ? (
         <p style={{ color: '#4c1' }}>{data}</p>
       ) : (
         <form onSubmit={handleSubmit}>
-          <Input label="Email / Usuário" type="text" name="login" {...login} />
+          <Input
+            label="E-mail ou Usuário"
+            type="text"
+            name="login"
+            placeholder="Insira seu e-mail ou nome de usuário"
+            {...login}
+          />
 
           {loading ? (
             <Button disabled>Enviando...</Button>
           ) : (
-            <Button>Enviar Email</Button>
+            <Button>Enviar E-mail</Button>
           )}
         </form>
       )}

@@ -29,18 +29,39 @@ const LoginCreate = () => {
 
   return (
     <section className="animeLeft">
-      <Head title="Criar conta" />
+      <Head
+        title="Criar Conta"
+        description="Junte-se à nossa comunidade de amantes de cachorros hoje mesmo! Crie sua conta, compartilhe fotos e momentos inesquecíveis com outros apaixonados por cães. Comece a fazer parte da rede social canina número um."
+      />
 
-      <h1 className="title">Cadastre-se</h1>
+      <h1 className="title">Criar Conta</h1>
       <form onSubmit={handleSubmit}>
-        <Input label="Usuário" type="text" name="username" {...username} />
-        <Input label="E-mail" type="text" name="email" {...email} />
-        <Input label="Senha" type="password" name="password" {...password} />
+        <Input
+          label="Nome de usuário"
+          type="text"
+          name="username"
+          placeholder="Insira seu nome de usuário"
+          {...username}
+        />
+        <Input
+          label="E-mail"
+          type="text"
+          name="email"
+          placeholder="Insira seu e-mail"
+          {...email}
+        />
+        <Input
+          label="Senha"
+          type="password"
+          name="password"
+          placeholder="Crie uma senha"
+          {...password}
+        />
 
         {loading ? (
-          <Button disabled>Cadastrando...</Button>
+          <Button disabled>Criando Conta...</Button>
         ) : (
-          <Button>Cadastrar</Button>
+          <Button>Criar Conta</Button>
         )}
 
         <Error error={error} />

@@ -26,7 +26,7 @@ const UserHeaderNav = () => {
 
   function handleLogout() {
     userLogout();
-    navigate('/login');
+    navigate('/entrar');
   }
 
   return (
@@ -46,19 +46,36 @@ const UserHeaderNav = () => {
           mobileMenu && styles.navMobileActive
         }`}
       >
-        <NavLink to="/conta" end className={styles.navLink}>
+        <NavLink
+          to="/conta"
+          end
+          className={styles.navLink}
+          aria-label="Minhas fotos"
+        >
           <Feed />
           {mobile && 'Minhas fotos'}
         </NavLink>
-        <NavLink to="/conta/estatisticas" className={styles.navLink}>
+        <NavLink
+          to="/conta/estatisticas"
+          className={styles.navLink}
+          aria-label="Estatisticas"
+        >
           <Stats />
           {mobile && 'Estatisticas'}
         </NavLink>
-        <NavLink to="/conta/postar" className={styles.navLink}>
+        <NavLink
+          to="/conta/postar"
+          className={styles.navLink}
+          aria-label="Adicionar foto"
+        >
           <AddPhoto />
           {mobile && 'Adicionar foto'}
         </NavLink>
-        <button onClick={handleLogout} className={styles.navLink}>
+        <button
+          onClick={handleLogout}
+          className={styles.navLink}
+          aria-label="Sair"
+        >
           <Exit />
           {mobile && 'Sair'}
         </button>

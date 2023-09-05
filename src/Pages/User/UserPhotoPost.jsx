@@ -47,7 +47,10 @@ const UserPhotoPost = () => {
 
   return (
     <section className={`${styles.photoPost} animeLeft`}>
-      <Head title="Poste sua Foto" />
+      <Head
+        title="Postar Foto"
+        description="Gerencie suas atividades na nossa rede social para cachorros. Visualize suas fotos, monitore estatísticas de acessos e compartilhe momentos especiais com outros apaixonados por cães."
+      />
 
       <form onSubmit={handleSubmit}>
         <Input label="Nome" type="text" name="nome" {...nome} />
@@ -61,9 +64,9 @@ const UserPhotoPost = () => {
           onChange={handleImgChange}
         />
         {loading ? (
-          <Button disabled>Enviando...</Button>
+          <Button disabled>Postando...</Button>
         ) : (
-          <Button>Enviar</Button>
+          <Button>Postar</Button>
         )}
         <Error error={error} />
       </form>

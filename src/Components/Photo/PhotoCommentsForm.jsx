@@ -34,7 +34,7 @@ const PhotoCommentsForm = ({ id, setComments, single }) => {
         className={styles.textarea}
         id="comment"
         name="comment"
-        placeholder="Comente"
+        placeholder="Comentar"
         value={comment}
         onChange={({ target }) => setComment(target.value)}
       />

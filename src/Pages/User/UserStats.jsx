@@ -25,7 +25,10 @@ const UserStats = () => {
   if (data)
     return (
       <React.Suspense fallback={<div></div>}>
-        <Head title="Estatísticas" />
+        <Head
+          title="Estatísticas"
+          description="Gerencie suas atividades na nossa rede social para cachorros. Visualize suas fotos, monitore estatísticas de acessos e compartilhe momentos especiais com outros apaixonados por cães."
+        />
 
         <UserStatsGraphs data={data} />
       </React.Suspense>

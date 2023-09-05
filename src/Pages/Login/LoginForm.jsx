@@ -28,13 +28,28 @@ const LoginForm = () => {
 
   return (
     <section className="animeLeft">
-      <Head title="Login" />
+      <Head
+        title="Entrar"
+        description="Entre na sua conta na maior comunidade online para amantes de cachorros. Acesse fotos, perfis e interaja com outros membros da comunidade canina. Continue a compartilhar sua paixão por cães conosco."
+      />
 
-      <h1 className="title">Login</h1>
+      <h1 className="title">Entrar</h1>
 
       <form className={styles.form} onSubmit={handleSubmit}>
-        <Input label="Usuário" type="text" name="username" {...username} />
-        <Input label="Senha" type="password" name="password" {...password} />
+        <Input
+          label="Usuário"
+          type="text"
+          name="username"
+          placeholder="Insira seu nome de usuário"
+          {...username}
+        />
+        <Input
+          label="Senha"
+          type="password"
+          name="password"
+          placeholder="Insira sua senha"
+          {...password}
+        />
         {loading ? (
           <Button disabled>Carregando</Button>
         ) : (
@@ -43,17 +58,17 @@ const LoginForm = () => {
         <Error error={error && 'Dados incorretos.'} />
       </form>
 
-      <Link className={styles.forgot} to="/login/perdeu">
-        Perdeu a Senha?
+      <Link className={styles.forgot} to="/entrar/perdeu">
+        Esqueceu a Senha?
       </Link>
 
       <div className={styles.register}>
-        <h2 className={styles.subtitle}>Cadastre-se</h2>
+        <h2 className={styles.subtitle}>Criar Conta</h2>
         <p className={styles.registerText}>
           Ainda não possui conta? Cadastre-se no site
         </p>
-        <Link className={stylesBtn.button} to="/login/criar">
-          Cadastro
+        <Link className={stylesBtn.button} to="/entrar/criar">
+          Criar Conta
         </Link>
       </div>
     </section>

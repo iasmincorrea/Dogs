@@ -37,15 +37,18 @@ const LoginPasswordReset = () => {
       });
 
       const { response } = await request(url, options);
-      if (response.ok) navigate('/login');
+      if (response.ok) navigate('/entrar');
     }
   }
 
   return (
     <section className="animeLeft">
-      <Head title="Resete a Senha" />
+      <Head
+        title="Resetar Senha"
+        description="Redefina com sucesso sua senha na nossa comunidade de amantes de cachorros. Siga as etapas para criar uma nova senha segura e volte a fazer parte da nossa rede social dedicada aos nossos amigos de quatro patas."
+      />
 
-      <h1 className="title">Resete a Senha</h1>
+      <h1 className="title">Resetar Senha</h1>
 
       <form onSubmit={handleSubmit}>
         <Input

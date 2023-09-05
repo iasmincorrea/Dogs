@@ -25,7 +25,7 @@ const App = () => {
           <main className="appBody">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/login/*" element={<Login />} />
+              <Route path="/entrar/*" element={<Login />} />
               <Route
                 path="/conta/*"
                 element={

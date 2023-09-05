@@ -14,7 +14,10 @@ const User = () => {
 
   return (
     <section className="container">
-      <Head title="Minha Conta" />
+      <Head
+        title="Minha Conta"
+        description="Gerencie suas atividades na nossa rede social para cachorros. Visualize suas fotos, monitore estatísticas de acessos e compartilhe momentos especiais com outros apaixonados por cães."
+      />
 
       <UserHeader />
       <Routes>

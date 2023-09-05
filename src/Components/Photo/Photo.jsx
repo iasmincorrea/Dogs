@@ -21,7 +21,10 @@ const Photo = () => {
   if (data)
     return (
       <section className="container mainContainer">
-        <Head title={data.photo.title} />
+        <Head
+          title={data.photo.title}
+          description={`Conheça ${data.photo.title} - Um Amigo de Quatro Patas na Comunidade Canina. Explore fotos e saiba mais sobre esse incrível companheiro peludo. Faça parte da nossa rede social dedicada aos amantes de cachorros.`}
+        />
 
         <PhotoContent single={true} data={data} />
       </section>

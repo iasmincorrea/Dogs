@@ -14,8 +14,8 @@ const Header = () => {
         <Link
           className={styles.logo}
           to="/"
-          aria-label="Home | Dogs"
-          title="Ir para a Home"
+          aria-label="Feed | Dogs"
+          title="Ir para o Feed"
         >
           <Dogs />
         </Link>
@@ -24,8 +24,8 @@ const Header = () => {
             {data.nome}
           </Link>
         ) : (
-          <Link className={styles.login} to="/login">
-            Login | Criar
+          <Link className={styles.login} to="/entrar">
+            Entrar | Criar conta
           </Link>
         )}
       </nav>
